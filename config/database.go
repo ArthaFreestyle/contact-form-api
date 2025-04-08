@@ -12,7 +12,7 @@ import (
 
 var DB *gorm.DB
 
-func initDB(){
+func InitDB(){
 	dbUser := GetEnv("DB_USER","user")
 	dbPass := GetEnv("DB_PASSWORD","password")
 	dbHost := GetEnv("DB_HOST","db")
